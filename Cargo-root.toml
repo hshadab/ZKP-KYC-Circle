@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+
+# All local crates in the sandbox
+members = [
+    "zkEngine_dev",
+    "kyc_prover",
+    "kyc_wasm",
+]
+
+# ────────────────────────────────────────────────────────────────
+# Package metadata inherited by crates that use *.workspace = true
+# (e.g. wasmi in zkEngine_dev/third-party).
+# Stub values are fine for local builds.
+# ────────────────────────────────────────────────────────────────
+[workspace.package]
+name            = "zkengine-sandbox"              # not used by crates.io
+version         = "0.1.0"
+edition         = "2021"
+authors         = ["Houman Shadab <houman@example.com>"]
+license         = "MIT OR Apache-2.0"
+description     = "Local sandbox workspace for zkEngine + KYC prover demo"
+repository      = "https://example.com/zkengine-sandbox"
+homepage        = "https://example.com"
+documentation   = "https://example.com/docs"
+readme          = "README.md"
+keywords        = ["zk", "wasm", "sandbox"]
+categories      = ["cryptography"]
+rust-version    = "1.70"
+
+# ────────────────────────────────────────────────────────────────
+# Local patch: satisfy every `zkwasm_io` dependency with our stub.
+# ────────────────────────────────────────────────────────────────
+[patch.crates-io]
+zkwasm_io = { path = "third_party/zkwasm_io" }
