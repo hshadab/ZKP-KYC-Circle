@@ -7,11 +7,11 @@ A zero-knowledge proof system for Circle's KYC verification webhook.
 This project demonstrates a zero-knowledge cryptography application for validating Know Your Customer (KYC) information privately. It uses zkEngine, a zkWASM virtual machine that enables zero-knowledge proofs for arbitrary WASM programs.
 
 The system allows proving that:
-1. A user possesses a valid wallet address
-2. The user has passed KYC verification
-3. The signature verification is valid
+1. A user possesses a valid USDC wallet address
+2. The user has passed Circle's KYC verification
+3. The Circle signature verification is valid
 
-All without revealing the actual wallet address or KYC information to verifiers.
+...all without revealing the actual wallet address or KYC information to verifiers.
 
 ## Architecture
 
