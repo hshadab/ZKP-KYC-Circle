@@ -1,6 +1,6 @@
 # ZKP-KYC-Circle
 
-A zero-knowledge proof system for Circle-style KYC verification using zkWASM execution
+A zero-knowledge proof system for Circle's KYC verification webhook.
 
 ## Overview
 
