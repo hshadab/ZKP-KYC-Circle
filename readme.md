@@ -11,7 +11,7 @@ The system allows proving that:
 2. The user has passed Circle's KYC verification
 3. The Circle signature verification is valid
 
-...all without revealing the actual wallet address or KYC information to verifiers.
+...all without revealing the actual KYC information to verifiers.
 
 ## Architecture
 
